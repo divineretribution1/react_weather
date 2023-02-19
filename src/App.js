@@ -51,7 +51,7 @@ const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units
           <p>Humidity</p>
         </div>
         <div className="wind">
-          {data.wind ? <p className="bold">{data.wind.speed.toFixed(1)}KPH</p> : null}
+          {data.wind ? <p className="bold">{data.wind.speed.toFixed()}KPH</p> : null}
           <p>Wind speed</p>
         </div>
       </div>
