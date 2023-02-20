@@ -64,6 +64,7 @@ h1 {
 .top {
   width: 100%;
   margin: 1rem auto;
+  padding-left: 10px;
   animation-name: fade-in;
   animation-duration: 0.7s;
 }
