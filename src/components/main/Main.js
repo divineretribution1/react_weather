@@ -1,4 +1,4 @@
-import { Icon } from "../icon/Icon"
+import { WeatherIcon } from "../weatherIcon/WeatherIcon"
 
 export const Main = ({ data }) => {
     const { name, main, weather, wind, sys } = data || {}
@@ -23,7 +23,7 @@ export const Main = ({ data }) => {
 
             {data && 
             <div className="bottom">
-                <Icon weather={weather} />
+                <WeatherIcon weather={weather} />
                 <div className="feels">
                     {main && <p className="bold">{main.feels_like.toFixed()}°C</p>}
                     <p>Feels like</p>
