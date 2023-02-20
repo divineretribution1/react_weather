@@ -58,11 +58,22 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .top {
   width: 100%;
   margin: 1rem auto;
+  animation-name: fade-in;
+  animation-duration: 0.7s;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .description {
@@ -75,12 +86,27 @@ h1 {
 .bottom {
   display: flex;
   justify-content: space-evenly;
+  position: absolute;
   text-align: center;
+  align-items: center;
   width: 100%;
   margin: 1rem, auto;
   padding: 1rem;
   border-radius: 20px;
-  background-color: rgb(255, 255, 255, 0.1);
+  background-color: rgb(255, 255, 255, 0.2);
+  bottom: 0;
+  animation-name: slide-out;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
 }
 
 .search {

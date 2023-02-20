@@ -16,8 +16,8 @@ function App() {
   return (
     <div className="app">
       <Header inputRef={inputRef} setLocation={setLocation}/>
-      <Loader isLoading={isLoading}/>
-      <Error isError={isError}/>
+      <Loader isLoading={isLoading} />
+      <Error isError={isError} />
       <Main data={data} />
     </div>
   );
